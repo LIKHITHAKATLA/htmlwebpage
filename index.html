@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html imp topics</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body,p{
+            font-size: 18px;
+        }
+        header{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            background-color: rgb(1, 244, 200);
+            height: 90px;
+            padding: 10px;
+        }
+        nav{
+            
+            word-spacing: 150px;
+            background-color:rgb(188, 33, 134) ;
+            height: 25px;
+            padding: 20px;
+            margin: 0;
+            position: sticky;
+            top: 0;
+
+        }
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+.list{
+    font-weight: bold;
+}
+table {
+  border-collapse: collapse;
+  width: 50%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+  
+}
+
+tr:nth-child(even) {
+  background-color: #D6EEEE;
+}
+.center {
+  margin-left: auto; 
+  margin-right: auto;
+  text-align: center;
+}
+footer{
+    height: 120px;
+    background-color: burlywood;
+}
+    </style>
+</head>
+<body>
+      <header>
+        <h1>HTML IMPORTANT TAGS</h1>
+      </header>  
+      <nav>
+        <a href="#format">FORMATING<a>
+        <a href="#quot">QUOTATIONS</a>
+        <a href="#entity">ENTITIES</a>
+        <a href="#sematic">SEMATIC</a>
+        <a href="#contact">CONTACT</a>
+      </nav>
+        <p>Let us discuss some important topics in HTML:<p>
+        <p>They are:</p>
+        <ol>
+            <li class="list">Formating tags</li>
+            <li class="list">Quotation and Citation Elements</li>
+            <li class="list">Entities</li>
+            <li class="list">Semantic Elements</li>
+        </ol>
+        <section id="format">
+            <h2 class="center"><u>HTML TEXT FORMATING TAGS:</u></h2>
+            <p>HTML contains several elements for defining text with a special meaning.</p>
+            <table class="center">
+                <tr>
+                    <th>TAG</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>&lt;br&gt;</td>
+                    <td>Defines bold text</td>
+                </tr>
+                <tr>
+                    <td>&lt;em&gt;</td>
+                    <td>Defines emphasized text </td>
+                </tr>
+                <tr>
+                    <td>&lt;i&gt;</td>
+                    <td>Defines a part of text in an alternate voice or mood</td>
+                </tr>
+                <tr>
+                    <td>&lt;SUP&gt;</td>
+                    <td>Defines superscripted text</td>
+                </tr>
+                <tr>
+                    <td>&lt;small&gt;</td>
+                    <td>Defines smaller text</td>
+                </tr>
+                <tr>
+                    <td>&lt;strong&gt;</td>
+                    <td>Defines important text</td>
+                </tr>
+                <tr>
+                    <td>&lt;sub&gt;</td>
+                    <td>Defines subscripted text</td>
+                </tr>
+                <tr>
+                    <td>&lt;ins&gt;</td>
+                    <td>Defines inserted text</td>
+                </tr>
+                <tr>
+                    <td>&lt;del&gt;</td>
+                    <td>Defines deleted text</td>
+                </tr>
+                <tr>
+                    <td>&lt;mark&gt;</td>
+                    <td>Defines marked/highlighted text</td>
+                </tr>
+            </table>
+        </section>
+        <section id="quot">
+            <h2 class="center"><u>HTML QUOTATION AND CITATION ELEMENTS</u>:</h2>
+           <h3>HTML &lt;abbr&gt; for Abbreviations</h3>
+           <p>The HTML &lt;abbr&gt; tag defines an abbreviation or an acronym, like "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".
+            Marking abbreviations can give useful information to browsers, translation systems and search-engines.
+           </p>
+           <p><b>Tip</b>: Use the global title attribute to show the description for the abbreviation/acronym when you mouse over the element.  
+           </p>
+           <h3>HTML &lt;address&gt; for Contact Information</h3>
+           <p>The HTML &lt;address&gt; tag defines the contact information for the author/owner of a document or an article.
+
+            The contact information can be an email address, URL, physical address, phone number, social media handle, etc.
+            </p>
+            <P>
+            The text in the &lt;address&gt; element usually renders in italic, and browsers will always add a line break before and after the &lt;address&gt; element.</p>
+
+            <h3>HTML &lt;cite&gt; for Work Title</h3>
+                <p>The HTML &lt;cite&gt; tag defines the title of a creative work (e.g. a book, a poem, a song, a movie, a painting, a sculpture, etc.).</p>
+                <p><b>Note:</b> A person's name is not the title of a work.</p>
+                <p>The text in the &lt;cite&gt; element usually renders in italic.</p>
+            <h3>HTML &lt;bdo&gt; for Bi-Directional Override</h3>
+                <p>BDO stands for Bi-Directional Override.</p>
+                
+                <p>The HTML &lt;bdo&gt; tag is used to override the current text direction</p>
+
+            <table class="center">
+                <tr>
+                    <th>TAG</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>&lt;abbr&gt;</td>
+                    <td>Defines an abbreviation or acronym</td>
+                </tr>
+                <tr>
+                    <td>&lt;address&gt;</td>
+                    <td>Defines contact information for the author/owner of a document</td>
+                </tr>
+                <tr>
+                    <td>&lt;bdo&gt;</td>
+                    <td>Defines the text direction</td>
+                </tr>
+                <tr>
+                    <td>&lt;cite&gt;</td>
+                    <td>Defines the title of a work</td>
+                </tr>
+                <tr>
+                    <td>&lt;blockquote&gt;</td>
+                    <td>Defines a section that is quoted from another source</td>
+                </tr>
+                <tr>
+                    <td>&lt;q&gt;</td>
+                    <td>Defines a short inline quotation</td>
+                </tr>
+            </table>
+        </section>
+        <section id="entity">
+            <h2 class="center"><u>HTML Entities</u></h2>
+            <p>Reserved characters in HTML must be replaced with entities:</p>
+            <ul>
+                <li>< (less than) = &amp;lt;</li>
+                <li>> (greater than) = &amp;gt;</li>
+            </ul>
+            <h3>HTML Character Entities</h3>
+            <p>Some characters are reserved in HTML.</p>
+            <p>If you use the less than (<) or greater than (>) signs in your HTML text, the browser might mix them with tags.</p>
+            <p>Entity names or entity numbers can be used to display reserved HTML characters.</p>
+            <p>Entity names look like this:<b>&entity_name;</b></p>
+            <p>Entity numbers look like this:<b>&#entity_number;</b></p>
+            <p>To display a less than sign (<) we must write:  &amp;lt; or &amp;#60;</p>
+            <table class="center">
+                <tr>
+                    <th>Result</th>
+                    <th>Description</th>
+                    <th>Name</th>
+                    <th>Number</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>no breaking space</td>
+                    <td>&amp;nbsp</td>
+                    <td>&amp;#160;</td>
+                </tr>
+            
+                <tr>
+                    <td>&lt;</td>
+                    <td>less than</td>
+                    <td>&amp;lt;</td>
+                    <td>&amp;#60;</td>
+                </tr>
+                <tr>
+                    <td>&gt;</td>
+                    <td>greater than</td>
+                    <td>&amp;gt</td>
+                    <td>&amp;#62</td>
+                </tr>
+                <tr>
+                    <td>&</td>
+                    <td>ampersand</td>
+                    <td>&amp;</td>
+                    <td>&amp;#32</td>
+                </tr>
+                <tr>
+                    <td>"</td>
+                    <td>double quotation mark</td>
+                    <td>&amp;quot;</td>
+                    <td>&amp;#34;</td>
+                </tr>
+                <tr>
+                    <td>'</td>
+                    <td>single quotation mark</td>
+                    <td>&amp;apos;</td>
+                    <td>&amp;#39;</td>
+                </tr>
+                </table>
+        </section>
+        <section id="sematic">
+            <h2 class="center"><u>HTML Semantic Elements</u></h2>
+            <h3>What are Semantic Elements?</h3>
+            <p>A semantic element clearly describes its meaning to both the browser and the developer.</p>
+            <p>Examples of <b>non-semantic elements:</b> &lt;div&gt; and &lt;span&gt; - Tells nothing about its content.</p>
+            Examples of <b>semantic elements:</b> &lt;form&gt;,&lt;table&gt; , and &lt;article&gt; - Clearly defines its content.
+            <table>
+            <tr><td><img src="sematic.png" alt="semantic" height="400px"></td>
+                <td><iframe src="" frameborder="0"></iframe></td>
+            </tr>
+            </table>
+            
+            <h3>HTML &lt;section&gt; Element</h3>
+            <p>The &lt;section&gt; element defines a section in a document.</p>
+            Examples of where a Examples of where a &lt;section&gt; element can be used:
+                <ul>
+                    <li>Chapters</li>
+                    <li>Inroduction</li>
+                    <li>news items</li>
+                    <li>contact information</li>
+                </ul>
+                <h3>HTML &lt;article&gt; Element</h3>
+                <p>The &lt;article&gt; element specifies independent, self-contained content.</p>
+
+                    <p>An article should make sense on its own, and it should be possible to distribute it independently from the rest of the web site.</p>
+                    
+                    <p>Examples of where the &lt;article&gt; element can be used:</p>
+                    <ul>
+                        <li>Forum posts</li>
+                        <li>Product cards</li>
+                        </li>Newspaper articles</li>
+                        <li>Blog posts</li>
+                        <li>User comments</li>
+                    </ul>
+            <h3>HTML &lt;header&gt; Element</h3>
+            <p>The &lt;header&gt; element represents a container for introductory content or a set of navigational links.</p>
+
+               <p>A &lt;header&gt; element typically contains:</p>
+                <ul>
+                <li>one or more heading elements </li>
+                <li>logo or icon</li>
+                <li>authorship information</li>
+            </ul>
+               <p>Note: You can have several&lt;header&gt; elements in one HTML document. However, &lt;header&gt; cannot be placed within a &lt;footer&gt;, &lt;address&gt; or another &lt;header&gt; element.</p>
+               <h3>HTML &lt;footer&gt; Element</h3>
+                <p>The &lt;footer&gt; element defines a footer for a document or section.</p>
+                
+                <p>A &lt;footer&gt; element typically contains:</p>
+                <ul>
+                <li>authorship information</li>
+                <li>copyright information</li>
+                <li>contact information</li>
+                <li>sitemap</li>
+                <li>back to top links</li>
+                <li>related documents</li>
+                </ul>
+                <p>You can have several &lt;footer&gt; elements in one document.</p>
+           
+        </section>
+        <footer id="contact">
+            <center>
+    <h2>CONCACT US:</h2>
+    <table cellspacing="20px">
+    <th><a href="tel:9398320685"><i class="fa fa-phone" style="font-size:48px;color:black"></i></a></th>
+    <th><a href="mailto:sklp.katla2001@gmail.com"><i class="fa fa-envelope" style="font-size:48px;color:black"></i></a></th>
+    <th><a href="https://wa.me/9398320685?Hello"><i class="fa fa-whatsapp" style="font-size:48px;color:black"></i></a></th>
+    </table>    
+</center>
+
+
+        </footer>
+</body>
+</html>
